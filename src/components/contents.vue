@@ -6,36 +6,70 @@
     <div class="connect">
       <div class="line"></div>
       <div class="horizontolLine"></div>
-      <div class="lineGroup">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
     </div>
     <div class="taskContainer">
       <div class="taskItemContainer">
+        <div class="line"></div>
         <div class="task" @click="scrollTo('1-1')">物体理解</div>
+        <div class="line"></div>
+        <div class="subTaskGroup">
+          <div class="subTask" @click="scrollTo('1-1')">物体大小估计</div>
+          <div class="subTask" @click="scrollTo('1-2')">物体属性识别</div>
+          <div class="subTask" @click="scrollTo('1-3')">物体可供性识别</div>
+        </div>
       </div>
       <div class="taskItemContainer">
+        <div class="line"></div>
         <div class="task" @click="scrollTo('2-1')">场景理解</div>
+        <div class="line"></div>
+        <div class="subTaskGroup">
+          <div class="subTask" @click="scrollTo('2-1')">视觉定位</div>
+          <div class="subTask" @click="scrollTo('2-2')">面积估计</div>
+          <div class="subTask" @click="scrollTo('2-3')">绝对距离</div>
+          <div class="subTask" @click="scrollTo('2-4')">场景类别识别</div>
+        </div>
       </div>
       <div class="taskItemContainer">
+        <div class="line"></div>
         <div class="task" @click="scrollTo('3-1')">空间关系理解</div>
+        <div class="line"></div>
+        <div class="subTaskGroup">
+          <div class="subTask" @click="scrollTo('3-1')">物体计数</div>
+          <div class="subTask" @click="scrollTo('3-2')">相对方向</div>
+          <div class="subTask" @click="scrollTo('3-3')">相对距离</div>
+          <div class="subTask" @click="scrollTo('3-4')">空间状态记忆</div>
+        </div>
       </div>
       <div class="taskItemContainer">
+        <div class="line"></div>
         <div class="task" @click="scrollTo('4-1')">时空关系理解</div>
+        <div class="line"></div>
+        <div class="subTaskGroup">
+          <div class="subTask" @click="scrollTo('4-1')">出现顺序</div>
+          <div class="subTask" @click="scrollTo('4-2')">动作理解</div>
+          <div class="subTask" @click="scrollTo('4-3')">状态变化理解</div>
+        </div>
       </div>
       <div class="taskItemContainer">
+        <div class="line"></div>
         <div class="task" @click="scrollTo('5-1')">空间推理</div>
+        <div class="line"></div>
+        <div class="subTaskGroup">
+          <div class="subTask" @click="scrollTo('5-1')">路径规划</div>
+          <div class="subTask" @click="scrollTo('5-2')">空间因果预测</div>
+        </div>
       </div>
       <div class="taskItemContainer">
+        <div class="line"></div>
         <div class="task" @click="scrollTo('6-1')">时空推理</div>
+        <div class="line"></div>
+        <div class="subTaskGroup">
+          <div class="subTask" @click="scrollTo('6-1')">时空因果预测</div>
+          <div class="subTask" @click="scrollTo('6-2')">动态物理预测</div>
+        </div>
       </div>
     </div>
-    <div class="connect">
+    <!-- <div class="connect">
       <div class="lineGroup">
         <div class="line"></div>
         <div class="line"></div>
@@ -44,39 +78,8 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-    </div>
-    <div class="subTaskContainer">
-      <div class="subTaskGroup">
-        <div class="subTask" @click="scrollTo('1-1')">物体大小估计</div>
-        <div class="subTask" @click="scrollTo('1-2')">物体属性识别</div>
-        <div class="subTask" @click="scrollTo('1-3')">物体可供性识别</div>
-      </div>
-      <div class="subTaskGroup">
-        <div class="subTask" @click="scrollTo('2-1')">视觉定位</div>
-        <div class="subTask" @click="scrollTo('2-2')">面积估计</div>
-        <div class="subTask" @click="scrollTo('2-3')">绝对距离</div>
-        <div class="subTask" @click="scrollTo('2-4')">场景类别识别</div>
-      </div>
-      <div class="subTaskGroup">
-        <div class="subTask" @click="scrollTo('3-1')">物体计数</div>
-        <div class="subTask" @click="scrollTo('3-2')">相对方向</div>
-        <div class="subTask" @click="scrollTo('3-3')">相对距离</div>
-        <div class="subTask" @click="scrollTo('3-4')">空间状态记忆</div>
-      </div>
-      <div class="subTaskGroup">
-        <div class="subTask" @click="scrollTo('4-1')">出现顺序</div>
-        <div class="subTask" @click="scrollTo('4-2')">动作理解</div>
-        <div class="subTask" @click="scrollTo('4-3')">状态变化理解</div>
-      </div>
-      <div class="subTaskGroup">
-        <div class="subTask" @click="scrollTo('5-1')">路径规划</div>
-        <div class="subTask" @click="scrollTo('5-2')">空间因果预测</div>
-      </div>
-      <div class="subTaskGroup">
-        <div class="subTask" @click="scrollTo('6-1')">时空因果预测</div>
-        <div class="subTask" @click="scrollTo('6-2')">动态物理预测</div>
-      </div>
-    </div>
+    </div> -->
+    <!-- <div class="subTaskContainer"></div> -->
   </div>
   <div class="qandaContainer">
     <div class="qandaItemContainer" id="1-1">
@@ -1278,7 +1281,7 @@ const scrollTo = (id) => {
 }
 .line {
   align-self: center;
-  width: 35%;
+  width: 100%;
   height: 2px;
   background-color: #209cee;
 }
@@ -1305,7 +1308,14 @@ const scrollTo = (id) => {
   width: 100%;
 }
 
-.taskContainer,
+.taskContainer {
+  display: grid;
+  grid-template-columns: 6;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
 .subTaskContainer {
   display: flex;
   flex-direction: column;
@@ -1315,7 +1325,9 @@ const scrollTo = (id) => {
 }
 
 .taskItemContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50px 1fr 100px 5fr;
+
   height: 100%;
   align-items: center;
 }
@@ -1331,7 +1343,7 @@ const scrollTo = (id) => {
   border-radius: 20px;
   border: #209cee solid 2px;
   padding: 0.5vmax 1vmax;
-  margin: 0.5vmax;
+  /* margin: 0.5vmax; */
   font-size: 0.8vmax;
   cursor: pointer;
   box-shadow: 2px 4px 2px #83cdff;
@@ -1356,6 +1368,7 @@ const scrollTo = (id) => {
   display: flex;
   height: 100%;
   align-items: center;
+  gap: 30px;
   /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; */
