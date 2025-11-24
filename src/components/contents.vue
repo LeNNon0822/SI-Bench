@@ -11,62 +11,67 @@
     <div class="taskContainer">
       <div class="taskItemContainer">
         <div class="line"></div>
-        <div class="task" @click="scrollTo('1-1')">物体理解</div>
+        <div class="task" @click="scrollTo('1-1')">Object-level understanding</div>
         <div class="line"></div>
         <div class="subTaskGroup">
-          <div class="subTask" @click="scrollTo('1-1')">物体大小估计</div>
-          <div class="subTask" @click="scrollTo('1-2')">物体属性识别</div>
-          <div class="subTask" @click="scrollTo('1-3')">物体可供性识别</div>
+          <div class="subTask" @click="scrollTo('1-1')">Object Size Estimation</div>
+          <div class="subTask" @click="scrollTo('1-2')">Object Attributes Estimation</div>
+          <div class="subTask" @click="scrollTo('1-3')">Object Functionality 
+Availability Estimation</div>
         </div>
       </div>
       <div class="taskItemContainer">
         <div class="line"></div>
-        <div class="task" @click="scrollTo('2-1')">场景理解</div>
+        <div class="task" @click="scrollTo('2-1')">Scene-level 
+Understanding</div>
         <div class="line"></div>
         <div class="subTaskGroup">
-          <div class="subTask" @click="scrollTo('2-1')">视觉定位</div>
-          <div class="subTask" @click="scrollTo('2-2')">面积估计</div>
-          <div class="subTask" @click="scrollTo('2-3')">绝对距离</div>
-          <div class="subTask" @click="scrollTo('2-4')">场景类别识别</div>
+          <div class="subTask" @click="scrollTo('2-1')">Object 3D 
+Grounding In Videos</div>
+          <div class="subTask" @click="scrollTo('2-2')">Room Size Estimation</div>
+          <div class="subTask" @click="scrollTo('2-3')">Object Absolute Distance</div>
+          <div class="subTask" @click="scrollTo('2-4')">Scene Classification</div>
         </div>
       </div>
       <div class="taskItemContainer">
         <div class="line"></div>
-        <div class="task" @click="scrollTo('3-1')">空间关系理解</div>
+        <div class="task" @click="scrollTo('3-1')">Spatial Object Relations Understanding</div>
         <div class="line"></div>
         <div class="subTaskGroup">
-          <div class="subTask" @click="scrollTo('3-1')">物体计数</div>
-          <div class="subTask" @click="scrollTo('3-2')">相对方向</div>
-          <div class="subTask" @click="scrollTo('3-3')">相对距离</div>
+          <div class="subTask" @click="scrollTo('3-1')">Object Count</div>
+          <div class="subTask" @click="scrollTo('3-2')">Object Relative Orientation</div>
+          <div class="subTask" @click="scrollTo('3-3')">Object Relative Distance</div>
           <div class="subTask" @click="scrollTo('3-4')">空间状态记忆</div>
         </div>
       </div>
       <div class="taskItemContainer">
         <div class="line"></div>
-        <div class="task" @click="scrollTo('4-1')">时空关系理解</div>
+        <div class="task" @click="scrollTo('4-1')">Spatio-Temporal Object Relations Understanding</div>
         <div class="line"></div>
         <div class="subTaskGroup">
-          <div class="subTask" @click="scrollTo('4-1')">出现顺序</div>
-          <div class="subTask" @click="scrollTo('4-2')">动作理解</div>
-          <div class="subTask" @click="scrollTo('4-3')">状态变化理解</div>
+          <div class="subTask" @click="scrollTo('4-1')">Appearance Order</div>
+          <div class="subTask" @click="scrollTo('4-2')">Action Recognition</div>
+          <div class="subTask" @click="scrollTo('4-3')">Object State Change</div>
         </div>
       </div>
       <div class="taskItemContainer">
         <div class="line"></div>
-        <div class="task" @click="scrollTo('5-1')">空间推理</div>
+        <div class="task" @click="scrollTo('5-1')">Spatial Action Reasoning</div>
         <div class="line"></div>
         <div class="subTaskGroup">
-          <div class="subTask" @click="scrollTo('5-1')">路径规划</div>
-          <div class="subTask" @click="scrollTo('5-2')">空间因果预测</div>
+          <div class="subTask" @click="scrollTo('5-1')">Indoor Navigation</div>
+          <div class="subTask" @click="scrollTo('5-2')">Spatial Causal Prediction</div>
         </div>
       </div>
       <div class="taskItemContainer">
         <div class="line"></div>
-        <div class="task" @click="scrollTo('6-1')">时空推理</div>
+        <div class="task" @click="scrollTo('6-1')">Spatio-Temporal 
+Action Reasoning</div>
         <div class="line"></div>
         <div class="subTaskGroup">
-          <div class="subTask" @click="scrollTo('6-1')">时空因果预测</div>
-          <div class="subTask" @click="scrollTo('6-2')">动态物理预测</div>
+          <div class="subTask" @click="scrollTo('6-1')">Spatio-Temporal Causal Prediction
+</div>
+          <div class="subTask" @click="scrollTo('6-2')">Physical Common Sense</div>
         </div>
       </div>
     </div>
@@ -89,22 +94,34 @@
     </div>
     <div class="taskGroup">
       <div class="taskBtnContainer">
-        <div class="taskBtn" @click="scrollTo('1-1')">物体理解</div>
+        <div class="taskBtn" @click="scrollTo('1-1')">
+          Object-level understanding
+        </div>
       </div>
       <div class="taskBtnContainer">
-        <div class="taskBtn" @click="scrollTo('2-1')">场景理解</div>
+        <div class="taskBtn" @click="scrollTo('2-1')">
+          Scene-level Understanding
+        </div>
       </div>
       <div class="taskBtnContainer">
-        <div class="taskBtn" @click="scrollTo('3-1')">空间关系理解</div>
+        <div class="taskBtn" @click="scrollTo('3-1')">
+          Spatial Object Relations Understanding
+        </div>
       </div>
       <div class="taskBtnContainer">
-        <div class="taskBtn" @click="scrollTo('4-1')">时空关系理解</div>
+        <div class="taskBtn" @click="scrollTo('4-1')">
+          Spatio-Temporal Object Relations Understanding
+        </div>
       </div>
       <div class="taskBtnContainer">
-        <div class="taskBtn" @click="scrollTo('5-1')">空间推理</div>
+        <div class="taskBtn" @click="scrollTo('5-1')">
+          Spatial Action Reasoning
+        </div>
       </div>
       <div class="taskBtnContainer">
-        <div class="taskBtn" @click="scrollTo('6-1')">时空推理</div>
+        <div class="taskBtn" @click="scrollTo('6-1')">
+          Spatio-Temporal Action Reasoning
+        </div>
       </div>
     </div>
     <div class="lineGroup second">
@@ -118,46 +135,72 @@
     <div class="taskGroup subTaskGroup">
       <div class="taskBtnContainer">
         <div class="subTaskBtnGroup">
-          <div class="taskBtn" @click="scrollTo('1-1')">物体大小估计</div>
-          <div class="taskBtn" @click="scrollTo('1-2')">物体属性识别</div>
-          <div class="taskBtn" @click="scrollTo('1-3')">物体可供性识别</div>
-        </div>
-      </div>
-      <div class="taskBtnContainer">
-        <div class="subTaskBtnGroup">
-          <div class="taskBtn" @click="scrollTo('2-1')">视觉定位</div>
-          <div class="taskBtn" @click="scrollTo('2-2')">面积估计</div>
-          <div class="taskBtn" @click="scrollTo('2-3')">绝对距离</div>
-          <div class="taskBtn" @click="scrollTo('2-4')">场景类别识别</div>
-        </div>
-      </div>
-      <div class="taskBtnContainer">
-        <div class="subTaskBtnGroup">
-          <div class="taskBtn" @click="scrollTo('3-1')">物体计数</div>
-          <div class="taskBtn" @click="scrollTo('3-2')">相对方向</div>
-          <div class="taskBtn" @click="scrollTo('3-3')">相对距离</div>
-          <div class="taskBtn" @click="scrollTo('3-4')">
-            空间状态记忆（长视频）
+          <div class="taskBtn" @click="scrollTo('1-1')">
+            Object Size Estimation
+          </div>
+          <div class="taskBtn" @click="scrollTo('1-2')">
+            Object Attributes Estimation
+          </div>
+          <div class="taskBtn" @click="scrollTo('1-3')">
+            Object Functionality Availability Estimation
           </div>
         </div>
       </div>
       <div class="taskBtnContainer">
         <div class="subTaskBtnGroup">
-          <div class="taskBtn" @click="scrollTo('4-1')">出现顺序</div>
-          <div class="taskBtn" @click="scrollTo('4-2')">动作理解</div>
-          <div class="taskBtn" @click="scrollTo('4-3')">状态变化理解</div>
+          <div class="taskBtn" @click="scrollTo('2-1')">
+            Object 3D Grounding In Videos
+          </div>
+          <div class="taskBtn" @click="scrollTo('2-2')">
+            Room Size Estimation
+          </div>
+          <div class="taskBtn" @click="scrollTo('2-3')">
+            Object Absolute Distance
+          </div>
+          <div class="taskBtn" @click="scrollTo('2-4')">
+            Scene Classification
+          </div>
         </div>
       </div>
       <div class="taskBtnContainer">
         <div class="subTaskBtnGroup">
-          <div class="taskBtn" @click="scrollTo('5-1')">路径规划</div>
-          <div class="taskBtn" @click="scrollTo('5-2')">空间因果预测</div>
+          <div class="taskBtn" @click="scrollTo('3-1')">Object Count</div>
+          <div class="taskBtn" @click="scrollTo('3-2')">
+            Object Relative Orientation
+          </div>
+          <div class="taskBtn" @click="scrollTo('3-3')">
+            Object Relative Distance
+          </div>
+          <div class="taskBtn" @click="scrollTo('3-4')">
+            Spatial State Memory
+          </div>
         </div>
       </div>
       <div class="taskBtnContainer">
         <div class="subTaskBtnGroup">
-          <div class="taskBtn" @click="scrollTo('6-1')">时空因果预测</div>
-          <div class="taskBtn" @click="scrollTo('6-2')">动态物理预测</div>
+          <div class="taskBtn" @click="scrollTo('4-1')">Appearance Order</div>
+          <div class="taskBtn" @click="scrollTo('4-2')">Action Recognition</div>
+          <div class="taskBtn" @click="scrollTo('4-3')">
+            Object State Change
+          </div>
+        </div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="subTaskBtnGroup">
+          <div class="taskBtn" @click="scrollTo('5-1')">Indoor Navigation</div>
+          <div class="taskBtn" @click="scrollTo('5-2')">
+            Spatial Causal Prediction
+          </div>
+        </div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="subTaskBtnGroup">
+          <div class="taskBtn" @click="scrollTo('6-1')">
+            Spatio-Temporal Causal Prediction
+          </div>
+          <div class="taskBtn" @click="scrollTo('6-2')">
+            Physical Common Sense
+          </div>
         </div>
       </div>
     </div>
@@ -166,10 +209,10 @@
   <div class="subTaskBlockContainer" id="1-1">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">物体理解</div>
+      <div class="mainTaskTitle">Object-level understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">物体大小估计</div>
+      <div class="subTaskTitle">Object Size Estimation</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -177,7 +220,8 @@
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           /> </span
-        >所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
+        ><span class="bold">Included datasets: </span
+        >arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -270,10 +314,10 @@
   <div class="subTaskBlockContainer" id="1-2">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">物体理解</div>
+      <div class="mainTaskTitle">Object-level understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">物体属性识别</div>
+      <div class="subTaskTitle">Object Attributes Estimation</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -281,7 +325,7 @@
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           /> </span
-        >所包含数据组：scannet、3rscan
+        ><span class="bold">Included datasets:</span> scannet、3rscan
       </div>
     </div>
     <div class="videoBlock">
@@ -407,10 +451,12 @@
   <div class="subTaskBlockContainer" id="1-3">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">物体理解</div>
+      <div class="mainTaskTitle">Object-level understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">物体可供性识别</div>
+      <div class="subTaskTitle">
+        Object Functionality Availability Estimation
+      </div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -418,7 +464,8 @@
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           /> </span
-        >所包含数据组：arkitscenes、3rscan、scannet
+        ><span class="bold">Included datasets:</span>
+        arkitscenes、3rscan、scannet
       </div>
     </div>
     <div class="videoBlock">
@@ -546,10 +593,10 @@
   <div class="subTaskBlockContainer" id="2-1">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">场景理解</div>
+      <div class="mainTaskTitle">Scene-level Understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">视觉定位</div>
+      <div class="subTaskTitle">Object 3D Grounding In Videos</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -557,7 +604,8 @@
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           /> </span
-        >所包含数据组：arkitscenes、scannet、3rscan、waymo、nuscenes
+        ><span class="bold">Included datasets:</span>
+        arkitscenes、scannet、3rscan、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -728,10 +776,10 @@
   <div class="subTaskBlockContainer" id="2-2">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">场景理解</div>
+      <div class="mainTaskTitle">Scene-level Understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">面积估计</div>
+      <div class="subTaskTitle">Room Size Estimation</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -740,7 +788,8 @@
             alt=""
           />
         </span>
-        所包含数据组：arkitscenes、scannet、scannet++、3rscan
+        <span class="bold">Included datasets:</span>
+        arkitscenes、scannet、scannet++、3rscan
       </div>
     </div>
     <div class="videoBlock">
@@ -828,10 +877,10 @@
   <div class="subTaskBlockContainer" id="2-3">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">场景理解</div>
+      <div class="mainTaskTitle">Scene-level Understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">绝对距离估计</div>
+      <div class="subTaskTitle">Object Absolute Distance</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -840,7 +889,8 @@
             alt=""
           />
         </span>
-        所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
+        Included
+        datasets：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -933,10 +983,10 @@
   <div class="subTaskBlockContainer" id="2-4">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">场景理解</div>
+      <div class="mainTaskTitle">Scene-level Understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">场景类别识别</div>
+      <div class="subTaskTitle">Scene Classification</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -945,7 +995,7 @@
             alt=""
           />
         </span>
-        所包含数据组：scannet、3rscan
+        <span class="bold">Included datasets:</span> scannet、3rscan
       </div>
     </div>
     <div class="videoBlock">
@@ -1083,10 +1133,10 @@
   <div class="subTaskBlockContainer" id="3-1">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">空间关系理解</div>
+      <div class="mainTaskTitle">Spatial Object Relations Understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">物体计数</div>
+      <div class="subTaskTitle">Object Count</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -1095,7 +1145,8 @@
             alt=""
           />
         </span>
-        所包含数据组：arkitscenes、scannet、scannet++、3rscan
+        <span class="bold">Included datasets:</span>
+        arkitscenes、scannet、scannet++、3rscan
       </div>
     </div>
     <div class="videoBlock">
@@ -1180,10 +1231,10 @@
   <div class="subTaskBlockContainer" id="3-2">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">空间关系理解</div>
+      <div class="mainTaskTitle">Spatial Object Relations Understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">相对方向</div>
+      <div class="subTaskTitle">Object Relative Orientation</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -1192,7 +1243,8 @@
             alt=""
           />
         </span>
-        所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
+        Included
+        datasets：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -1328,10 +1380,10 @@
   <div class="subTaskBlockContainer" id="3-3">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">空间关系理解</div>
+      <div class="mainTaskTitle">Spatial Object Relations Understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">相对距离</div>
+      <div class="subTaskTitle">Object Relative Distance</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -1340,7 +1392,8 @@
             alt=""
           />
         </span>
-        所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
+        Included
+        datasets：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -1477,10 +1530,10 @@
   <div class="subTaskBlockContainer" id="3-4">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">空间关系理解</div>
+      <div class="mainTaskTitle">Spatial Object Relations Understanding</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">空间状态记忆(长视频)</div>
+      <div class="subTaskTitle">Spatial State Memory</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -1489,7 +1542,8 @@
             alt=""
           />
         </span>
-        所包含数据组：epic-kitchens、egoschema、video-mme
+        <span class="bold">Included datasets:</span>
+        epic-kitchens、egoschema、video-mme
       </div>
     </div>
     <div class="videoBlock">
@@ -1622,10 +1676,12 @@
   <div class="subTaskBlockContainer" id="4-1">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">时空关系理解</div>
+      <div class="mainTaskTitle">
+        Spatio-Temporal Object Relations Understanding
+      </div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">出现顺序</div>
+      <div class="subTaskTitle">Appearance Order</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -1634,7 +1690,8 @@
             alt=""
           />
         </span>
-        所包含数据组：arkitscenes、scannet、scannet++、3rscan
+        <span class="bold">Included datasets:</span>
+        arkitscenes、scannet、scannet++、3rscan
       </div>
     </div>
     <div class="videoBlock">
@@ -1759,10 +1816,12 @@
   <div class="subTaskBlockContainer" id="4-2">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">时空关系理解</div>
+      <div class="mainTaskTitle">
+        Spatio-Temporal Object Relations Understanding
+      </div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">动作理解</div>
+      <div class="subTaskTitle">Action Recognition</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -1771,7 +1830,7 @@
             alt=""
           />
         </span>
-        所包含数据组：youcook2
+        <span class="bold">Included datasets:</span> youcook2
       </div>
     </div>
     <div class="videoBlock">
@@ -1908,10 +1967,12 @@
   <div class="subTaskBlockContainer" id="4-3">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">时空关系理解</div>
+      <div class="mainTaskTitle">
+        Spatio-Temporal Object Relations Understanding
+      </div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">状态变化理解</div>
+      <div class="subTaskTitle">Object State Change</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -1920,7 +1981,7 @@
             alt=""
           />
         </span>
-        所包含数据组：charades-ego
+        <span class="bold">Included datasets:</span> charades-ego
       </div>
     </div>
     <div class="videoBlock">
@@ -2051,10 +2112,10 @@
   <div class="subTaskBlockContainer" id="5-1">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">空间推理</div>
+      <div class="mainTaskTitle">Spatial Action Reasoning</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">路径规划</div>
+      <div class="subTaskTitle">Indoor Navigation</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -2063,7 +2124,8 @@
             alt=""
           />
         </span>
-        所包含数据组：arkitscenes、scannet、scannet++、roomtour3d、waymo、nuscenes
+        Included
+        datasets：arkitscenes、scannet、scannet++、roomtour3d、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -2169,10 +2231,10 @@
   <div class="subTaskBlockContainer" id="5-2">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">空间推理</div>
+      <div class="mainTaskTitle">Spatial Action Reasoning</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">空间因果预测</div>
+      <div class="subTaskTitle">Spatial Causal Prediction</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -2181,7 +2243,8 @@
             alt=""
           />
         </span>
-        所包含数据组：arkitscenes、scannet、scannet++、waymo、nuscenes
+        <span class="bold">Included datasets:</span>
+        arkitscenes、scannet、scannet++、waymo、nuscenes
       </div>
     </div>
     <div class="imgBlock">
@@ -2310,10 +2373,10 @@
   <div class="subTaskBlockContainer" id="6-1">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">时空推理</div>
+      <div class="mainTaskTitle">Spatio-Temporal Action Reasoning</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">时空因果预测</div>
+      <div class="subTaskTitle">Spatio-Temporal Causal Prediction</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -2322,7 +2385,8 @@
             alt=""
           />
         </span>
-        所包含数据组：epic-kitchens、waymo、nuscenes
+        <span class="bold">Included datasets:</span>
+        epic-kitchens、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -2462,10 +2526,10 @@
   <div class="subTaskBlockContainer" id="6-2">
     <div class="taskIntro">
       <div class="mainTaskDec">MAINTASK</div>
-      <div class="mainTaskTitle">时空推理</div>
+      <div class="mainTaskTitle">Spatio-Temporal Action Reasoning</div>
 
       <div class="subTaskDec">SUBTASK</div>
-      <div class="subTaskTitle">动态物理预测</div>
+      <div class="subTaskTitle">Physical Common Sense</div>
       <div class="subTaskInfo">
         <span class="datasetIconContainer">
           <img
@@ -2474,7 +2538,7 @@
             alt=""
           />
         </span>
-        所包含数据组：videophy-2
+        <span class="bold">Included datasets:</span> videophy-2
       </div>
     </div>
     <div class="videoBlock">
@@ -2632,6 +2696,10 @@ const scrollTo = (id) => {
 </script>
 
 <style scoped>
+.bold {
+  font-family: "PH-bold";
+}
+
 .contentsContainer {
   display: flex;
   flex-direction: column;
@@ -2658,12 +2726,13 @@ const scrollTo = (id) => {
 }
 .taskBtn {
   display: flex;
-  width: 10vmax;
+  width: 13vmax;
   text-align: center;
   line-height: 1.5;
   justify-content: center;
+  align-items: center;
   box-sizing: border-box;
-  padding: 0.75vmax;
+  padding: 0.75vmax 1vmax;
   border-radius: 8px;
   color: #ffffff;
   background: #57088f;
@@ -2683,7 +2752,7 @@ const scrollTo = (id) => {
 .horizontalLine {
   display: flex;
   height: 2px;
-  width: 60%;
+  width: 70%;
   justify-self: center;
   align-self: center;
   box-sizing: border-box;
@@ -2691,7 +2760,7 @@ const scrollTo = (id) => {
 }
 .lineGroup {
   display: flex;
-  width: 60%;
+  width: 70%;
   height: auto;
   justify-content: space-between;
   box-sizing: border-box;
@@ -2708,7 +2777,7 @@ const scrollTo = (id) => {
 .taskGroup {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  width: 72%;
+  width: 84%;
   height: auto;
   z-index: 1;
   /* justify-content: space-between; */
@@ -2723,7 +2792,8 @@ const scrollTo = (id) => {
 
 .taskGroup .taskBtn {
   justify-content: center;
-  width: 8vmax;
+  width: 11vmax;
+  padding: 0.75vmax 0.5vmax;
   background: #363636;
   margin-top: 0;
 }
@@ -2746,8 +2816,10 @@ const scrollTo = (id) => {
 
 .subTaskGroup .taskBtn {
   width: 8vmax;
+  font-size: 14px;
   background-color: #80b9fa;
   margin-top: 0;
+  padding: 0.75vmax 0.75vmax;
 }
 
 .taskBtn {
@@ -2905,6 +2977,8 @@ const scrollTo = (id) => {
 }
 .taskIntro {
   display: flex;
+  min-width: 240px;
+  /* width: 100%; */
   flex-direction: column;
 }
 .mainTaskInfo {
@@ -2937,8 +3011,8 @@ const scrollTo = (id) => {
   font-family: "PH-heavy";
   font-size: 18px;
   color: #000000;
-  padding: 0px 10px;
   margin-bottom: 20px;
+  line-height: 1.25;
 }
 
 .taskInfo {
@@ -2967,7 +3041,7 @@ const scrollTo = (id) => {
 }
 .subTaskTitle {
   font-family: "PH-heavy";
-  font-size: 40px;
+  font-size: 36px;
   color: #209cee;
   margin-bottom: 20px;
 }
@@ -3004,7 +3078,7 @@ const scrollTo = (id) => {
 }
 .imgGroupContainer img {
   width: 100%;
-  min-width: 280px;
+  min-width: 240px;
 
   aspect-ratio: 320/180;
   /* height: 180px; */
@@ -3016,7 +3090,7 @@ const scrollTo = (id) => {
 .videoPlayerContainer {
   display: flex;
   width: 100%;
-  min-width: 280px;
+  min-width: 240px;
   /* min-width: px; */
   aspect-ratio: 16/9;
   /* width: fit-content;
@@ -3268,6 +3342,7 @@ video {
   justify-content: center;
   align-items: center;
   min-height: 70px;
+  font-family: "PH-bold";
 }
 .textContainer > * {
   z-index: 1;

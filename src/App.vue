@@ -26,9 +26,9 @@ import { onMounted, onUpdated } from "vue";
 // 刷新回归顶点
 onMounted(() => {
   window.scrollTo(0, 0);
-  nextTick(() => {
-    window.scrollTo(0, 0);
-  });
+  // nextTick(() => {
+  //   window.scrollTo(0, 0);
+  // });
   // 延迟执行
   setTimeout(() => {
     window.scrollTo(0, 0);
