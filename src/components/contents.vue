@@ -1243,8 +1243,8 @@ Action Reasoning</div>
             alt=""
           />
         </span>
-        Included
-        datasets：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
+        <span class="bold">Included datasets:</span
+        >arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -1392,8 +1392,8 @@ Action Reasoning</div>
             alt=""
           />
         </span>
-        Included
-        datasets：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
+        <span class="bold">Included datasets:</span
+        >arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
@@ -2124,8 +2124,8 @@ Action Reasoning</div>
             alt=""
           />
         </span>
-        Included
-        datasets：arkitscenes、scannet、scannet++、roomtour3d、waymo、nuscenes
+        <span class="bold">Included datasets:</span>
+        arkitscenes、scannet、scannet++、roomtour3d、waymo、nuscenes
       </div>
     </div>
     <div class="videoBlock">
