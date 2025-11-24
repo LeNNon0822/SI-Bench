@@ -44,4 +44,26 @@ const options = reactive({
     display: none;
   }
 }
+:deep(.d-play-btn) {
+  width: 45px;
+  height: 45px;
+  .d-icon {
+    font-size: 20px !important;
+  }
+}
+
+:deep(.volume-box) {
+  height: 14vh !important;
+  :deep(.volume-text-size) {
+    margin-bottom: 2.5vh !important;
+  }
+}
+
+:deep(.d-tool-item.d-tool-time) {
+  font-size: 0.7vw !important;
+}
+:deep(.d-tool-item .d-icon) {
+  font-size: 1.2vw !important;
+  /* height: 1vmax !important; */
+}
 </style>
